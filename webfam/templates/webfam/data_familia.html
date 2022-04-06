@@ -1,0 +1,18 @@
+{% extends 'webfam/base.html' %}
+
+{% block main_content %}
+
+            {% for data in datos %}
+                <tr>
+                <td>{{data.nombre}}</td>
+                <td>{{data.apellido}}</td>
+                <br>
+                <td>{{data.dni}}</td>
+                <br>
+                <td>{{data.fecha_nacimiento}}</td>
+                <br>
+                <br>
+                </tr>
+            {% endfor %}
+
+{% endblock main_content %}
